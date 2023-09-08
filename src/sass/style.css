@@ -305,8 +305,8 @@ span[role=alert] {
     color: hsl(229, 24%, 87%);
     font-size: 0.875rem;
   }
-  .tracker__each-order :nth-child(2) {
-    font-weight: 500;
+  .tracker__each-order .title {
+    font-weight: 700;
   }
   .form {
     margin: 0;

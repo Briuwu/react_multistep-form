@@ -97,7 +97,7 @@ const TrackerGroup = ({ step, title, currStep }) => (
     <span className={`${step === currStep + 1 ? "active" : ""}`}>{step}</span>
     <div className="tracker__each-order">
       <p>Step {step}</p>
-      <p>{title}</p>
+      <p className="title">{title}</p>
     </div>
   </div>
 );
