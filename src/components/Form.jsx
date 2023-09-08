@@ -49,7 +49,7 @@ const Form = () => {
         <div className="tracker">
           {trackerTitles.map((el) => (
             <TrackerGroup
-              key={el.key}
+              key={el.id}
               step={el.step}
               title={el.title}
               currStep={page}
