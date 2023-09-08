@@ -121,7 +121,7 @@ span[role="alert"] {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media (min-width: 750px) {
   body {
     display: grid;
     min-height: 100dvh;
