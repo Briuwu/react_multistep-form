@@ -1,0 +1,46 @@
+@use "../Utils/function" as func;
+@use "../Utils/variables" as var;
+
+.addons {
+  display: grid;
+  gap: 1em;
+  font-size: func.rem(14);
+
+  &__each {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    cursor: pointer;
+
+    &-info p {
+      color: var.$cool-gray;
+      font-size: func.rem(13);
+    }
+
+    &-price {
+      margin-left: auto;
+    }
+
+    .select {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid var.$light-gray;
+      border-radius: 0.5em;
+    }
+
+    &:hover input ~ .select,
+    &:focus-within input ~ .select {
+      border-color: var.$purplish-blue;
+    }
+
+    & input:checked ~ .select {
+      background-color: rgba(191, 226, 253, 0.125);
+      border-color: var.$purplish-blue;
+    }
+  }
+}

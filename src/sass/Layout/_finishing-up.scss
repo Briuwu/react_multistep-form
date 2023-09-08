@@ -1,0 +1,61 @@
+@use "../Utils/function" as func;
+@use "../Utils/variables" as var;
+
+.finish {
+  background-color: var.$magnolia;
+  padding: 1em;
+  border-radius: 0.5em;
+  color: var.$cool-gray;
+  font-size: func.rem(14);
+  margin-top: 1em;
+
+  &-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var.$marine-blue;
+
+    border-bottom: 1px solid var.$light-gray;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+    &_main button {
+      font-weight: normal;
+      text-decoration: underline;
+      color: var.$cool-gray;
+      padding: 0;
+    }
+  }
+
+  &-addons {
+    display: grid;
+    gap: 1em;
+    font-weight: 500;
+
+    &_each {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_price {
+      color: var.$marine-blue;
+    }
+  }
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1em;
+  color: var.$cool-gray;
+  font-size: func.rem(14);
+  margin-top: 1em;
+
+  &_price {
+    color: var.$purplish-blue;
+    font-weight: 700;
+    font-size: func.rem(16);
+  }
+}

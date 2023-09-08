@@ -1,0 +1,22 @@
+@use "../Utils/function" as func;
+@use "../Utils/variables" as var;
+
+.thankyou {
+  text-align: center;
+  display: grid;
+  align-self: center;
+  justify-items: center;
+  gap: 0.5em;
+  padding-block: 4em;
+
+  h2 {
+    margin-top: 0.5em;
+  }
+  img {
+    width: 4em;
+  }
+
+  p {
+    color: var.$cool-gray;
+  }
+}
